@@ -1,0 +1,11 @@
+body{
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+}
+
+
+*:root{
+    --purple:#814096;
+    --pink:#F83292;
+    --gradient:linear-gradient(90deg, var(--purple), var(--pink));
+}

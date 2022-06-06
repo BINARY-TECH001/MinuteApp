@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agenda & participants</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        body{
+            overflow-x: hidden;
+            background-image: url('./images/images\ \(3\).jpeg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header" id="hed">
+
+    <a href="#" class="logo"><span>best</span>App</a>
+
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fas fa-bars"></label>
+
+    <nav class="navbar">
+        <a href="./home.html">home</a>
+        <a href="#features">files</a>
+        <a href="#about">agenda</a>
+        <a href="#review">setting</a>
+        <a href="#pricing">logout</a>
+        <!-- <a href="#contact">contact</a> -->
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!--agenda section start-->
+<section class="agenda_meeting">
+    <div class="agenda">
+        <h3 class="heading" id="hd">agenda</h3>
+        <p class="mtt">create meeting agenda</p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div class="bttt">
+            <a href="#" class="btt" id="btt1">DONE</a>
+        </div>
+    </div>
+
+    
+    <div class="parti" id="partici">
+            <h3 class="heading" id="hd">participants</h3>
+            <p class="mtt">add meeting participants</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="bttt">
+                <a href="#" class="btt" id="btt2">SAVE</a>
+            </div>
+    </div>
+
+</section>
+
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur rerum consectetur architecto ad tempora blanditiis quo aliquid inventore a.</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="./home.html">home</a>
+            <a href="#features">features</a>
+            <a href="#about">about</a>
+            <a href="#review">review</a>
+            <a href="#pricing">pricing</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">pinterest</a>
+            <a href="#">twitter</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p> +234-9077-6990-17 <br> +234-9059-3436-02 </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p> example@gmail.com <br> example@gmail.com </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> ibadan, nigeria - 90593 </p>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> &copy; copyright @ 2021 by code_hero </h1>
+
+</div>
+
+<!-- footer section ends -->
+
+
+</body>
+<script>
+    let participants = document.getElementById('partici');
+   let butt = document.getElementById('btt1');
+
+    let butt2 = document.getElementById('btt2');
+
+   butt.addEventListener('click', function(){
+    participants.style.display = 'block';
+   });
+
+   butt2.addEventListener('click', function(){
+       alert('are you sure to save data');
+   });
+
+</script>
+</html>
